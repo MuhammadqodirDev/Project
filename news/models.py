@@ -4,6 +4,7 @@ from ckeditor_uploader.fields import RichTextUploadingField
 from ckeditor.fields import RichTextField
 
 # Create your models here.
+#BLOG MODEL
 class Guruxlash(models.Model):
     ism = models.CharField(max_length=250, db_index=True)
     slug = models.SlugField(max_length=255, unique=True)
@@ -21,9 +22,11 @@ class Guruxlash(models.Model):
 # Blog post model
 class Post(models.Model):
     gurux = models.ForeignKey(Guruxlash, related_name='gurux', on_delete=models.CASCADE)
-    sarlovha = models.CharField(max_length=250,)
+    sarlovha = models.CharField(max_length=250)
     slug = models.SlugField(max_length=255)
-    matn = models.TextField()
+    matn = models.TextField(blank=True, null=True)
+    matn2 = models.TextField(null=True, blank=True)
+    matn3 = models.TextField(null=True, blank=True)
     joylangan = models.DateTimeField(auto_now_add=True)
     rasm = models.ImageField(upload_to='image/')
 
@@ -36,4 +39,32 @@ class Post(models.Model):
 
     def get_absolute_url(self):
         return reverse('single_blog', args=[self.slug])
+
+
+class Portfolio(models.Model):
+    sarlovha = models.CharField(max_length=255, blank=True, null=True)
+    slug = models.SlugField(max_length=255,  blank=True, null=True)
+    matn = models.TextField(blank=True, null=True)
+    rasm = models.ImageField(upload_to='image/', default='')
+    client = models.CharField(max_length=255,  blank=True, null=True)
+    xizmat = models.CharField(max_length=255,  blank=True, null=True)
+    joylangan = models.DateTimeField(auto_now_add=True)
+    vaqt = models.DateTimeField()
+
+    def __str__(self):
+        return self.sarlovha
+
+    class Meta:
+        ordering = [
+            '-joylangan'
+        ]
+
+    def get_absolute_url(self):
+        return reverse('/', args=[self.slug])
+
+
+
+
+
+
 

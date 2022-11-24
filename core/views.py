@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from news.models import Guruxlash, Post
+from news.models import Guruxlash, Post, Portfolio
 from django.core.mail import send_mail
 
 # Create your views here.
@@ -23,13 +23,15 @@ def BlogView(request):
     return render(request, 'blog.html', contex)
 
 def SingleBlog(request, slug):
-    post = get_object_or_404(Post, slug=slug)
+    post = Post.objects.get(slug=slug)
     contex = {
         'post1':post
     }
     return render(request, 'single-blog.html', contex)
 
-def Single(request):
+
+def SingleBlog(request):
+
     return render(request, 'single-blog.html')
 
 def ContactView(request):
@@ -38,7 +40,8 @@ def ContactView(request):
     return render(request, 'contact.html',)
 
 def PortfolioView(request):
-    return render(request, 'portfolio.html')
+    portf = Portfolio.objects.all()
+    return render(request, 'portfolio.html', {'post':portf})
 
 def ServiceView(request):
     return render(request, 'services.html')
