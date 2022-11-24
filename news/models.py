@@ -17,6 +17,8 @@ class Guruxlash(models.Model):
     def __str__(self):
         return self.ism
 
+
+# Blog post model
 class Post(models.Model):
     gurux = models.ForeignKey(Guruxlash, related_name='gurux', on_delete=models.CASCADE)
     sarlovha = models.CharField(max_length=250,)
