@@ -60,7 +60,7 @@ class Portfolio(models.Model):
         ]
 
     def get_absolute_url(self):
-        return reverse('/', args=[self.slug])
+        return reverse('single_portfolio', args=[self.slug])
 
 
 

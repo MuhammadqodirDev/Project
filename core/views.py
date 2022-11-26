@@ -17,22 +17,22 @@ def GuruxView(request):
 
 def BlogView(request):
     post = Post.objects.all()
-    contex = {
+    context = {
         'post':post
     }
-    return render(request, 'blog.html', contex)
+    return render(request, 'blog.html', context)
 
 def SingleBlog(request, slug):
     post = Post.objects.get(slug=slug)
-    contex = {
+    context = {
         'post1':post
     }
-    return render(request, 'single-blog.html', contex)
+    return render(request, 'single-blog.html', context)
 
 
-def SingleBlog(request):
-
-    return render(request, 'single-blog.html')
+# def SingleBlog(request):
+#
+#     return render(request, 'single-blog.html')
 
 def ContactView(request):
 
@@ -42,6 +42,13 @@ def ContactView(request):
 def PortfolioView(request):
     portf = Portfolio.objects.all()
     return render(request, 'portfolio.html', {'post':portf})
+
+def SinglePortfolio(request, slug):
+    post = Portfolio.objects.get(slug=slug)
+    context = {
+        'post':post
+    }
+    return render(request,'single-portfolio.html', context )
 
 def ServiceView(request):
     return render(request, 'services.html')

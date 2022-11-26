@@ -1,6 +1,27 @@
-{%  extends 'base.html'  %}
+{% extends 'base.html' %}
+
 {% block content %}
-    {% load static %}
+{% load static %}
+      <!--
+        =============================================
+            Page Banner  Section
+        ==============================================
+        -->
+        <section class="page-banner-wrap bg-contain bg-bottom d-flex align-items-center" style="background-image: url('assets/img/page_banner_bg.png')">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="page-banner">
+                            <span>our blog</span>
+                            <h2>Blog Details</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> <!-- /.page-banner-wrap -->
+
+
+
         <!-- 
         =============================================
             Blog Wrap
@@ -13,18 +34,18 @@
                         <div class="blog-item-full-grid">
                             <div class="single-blog-item">
                                 <div class="blog-featured-image">
-                                    <img src="assets/img/blog/blog1.jpg" alt="blog">
+
+                                    <img src="{{ post1.rasm.url }}" alt="blog">
                                 </div>
-                                <h2><a href="#">Example of job specification</a></h2>
+                                <h2><a href="#">{{ post1.sarlovha }}</a></h2>
                                 <div class="post-meta">
                                     <ul>
-                                        <li><a href="#">25 February , 2019</a></li>
-                                        <li><a href="#">By admin</a></li>
-                                        <li><a href="#">Design, Interiors</a></li>
+                                        <li><a href="#">{{ post1.joylangan }}</a></li>
+                                        <li><a href="#">{{ post1.xizmat }}</a></li>
                                         <li><a href="#">3 comments</a></li>
                                     </ul>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                                <p>{{ psot1.matn }}</p>
                                 <blockquote>
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
                                 </blockquote>
@@ -43,6 +64,7 @@
                                             <li>Lorem ipsum dolor sit amet,</li>
                                             <li>Ecminim veni quis nostrud exercita</li>
                                         </ul>
+
                                     </div>
                                 </div>
                             </div> <!-- /.single-blog-item -->
@@ -194,4 +216,5 @@
                 </div>
             </div>
         </section>
+
 {% endblock %}

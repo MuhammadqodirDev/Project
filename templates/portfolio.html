@@ -51,9 +51,9 @@
                         <h3>{{ post.sarlovha }}</h3>
                         <p>{{ post.matn }}</p>
                         <div class="portfolio-cat">
-                            <span>Building</span>
+                            <span><a href="{{ post.get_absolute_url }}">Building</a></span>
                         </div>
-                        <a href="single-portfolio.html" class="read-more-port">READ MORE <i class="fas fa-arrow-right"></i></a>
+                        <a href="{{ post.get_absolute_url }}" class="read-more-port">READ MORE <i class="fas fa-arrow-right"></i></a>
                          {% endfor %}
                     </div>
 

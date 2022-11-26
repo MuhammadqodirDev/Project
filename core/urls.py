@@ -8,6 +8,7 @@ urlpatterns = [
     path('blog/<slug:slug>/', views.SingleBlog, name='single_blog'),
     path('contact/', views.ContactView, name='contact'),
     path('portfolio/', views.PortfolioView, name='portfolio'),
+    path('portfolio/<slug:slug>/', views.SinglePortfolio, name='single_portfolio'),
     path('service/', views.ServiceView, name='service'),
     path('shop/', views.ShopView, name='shop'),
 
