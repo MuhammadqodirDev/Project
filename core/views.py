@@ -1,6 +1,5 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render
 from news.models import Guruxlash, Post, Portfolio
-from django.core.mail import send_mail
 
 # Create your views here.
 
