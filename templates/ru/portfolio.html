@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+        <!--
+        =============================================
+            Page Banner  Section
+        ==============================================
+        -->
+        <section class="page-banner-wrap bg-contain bg-bottom d-flex align-items-center" style="background-image: url('../static/assets/img/page_banner_bg.png')">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="page-banner">
+                            <span>Recent project showcase</span>
+                            <h2>Our Portfolio</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> <!-- /.page-banner-wrap -->
+
+
+        <!--
+        =============================================
+            Portoflio Section
+        ==============================================
+        -->
+        <section class="our-portfolio section_bg portfolio-two section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                          <div class="theme-heading">
+                            <span>Working Projects</span>
+                            <h2>Our Latest Projects</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-filter-buttons text-center">
+                <button data-filter="*">all portfolio</button>
+                <button data-filter=".building">Building</button>
+                <button data-filter=".business">Business</button>
+                <button data-filter=".finance">Finance</button>
+            </div>
+            <div class="portfolio-grid-items row">
+                <div class="single-portofolio grid-item building col-lg-4 col-md-6 bg-cover text-white" style="background-image: url(../static/assets/img/portfolio/p1.jpg)">
+                    <div class="portfolio-content">
+                    {% for post in post %}
+                        <h3>{{ post.sarlovha }}</h3>
+                        <p>{{ post.matn }}</p>
+                        <div class="portfolio-cat">
+                            <span><a href="{{ post.get_absolute_url }}">Building</a></span>
+                        </div>
+                        <a href="{{ post.get_absolute_url }}" class="read-more-port">READ MORE <i class="fas fa-arrow-right"></i></a>
+                         {% endfor %}
+                    </div>
+
+                </div> <!-- /.single-portofolio -->
+                <div class="single-portofolio business finance grid-item col-lg-4 col-md-6 bg-cover text-white" style="background-image: url(../static/assets/img/portfolio/p2.jpg)">
+                    <div class="portfolio-content">
+                        <h3>Working in new case</h3>
+                        <p>Excepteur sint occ aecat cupidatat non proident, sunt in culpa qui officia deserunt </p>
+                        <div class="portfolio-cat">
+                            <span>Building</span>
+                        </div>
+                        <a href="single-portfolio.html" class="read-more-port">READ MORE <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div> <!-- /.single-portofolio -->
+                <div class="single-portofolio business building grid-item col-lg-4 col-md-6 bg-cover text-white" style="background-image: url(../static/assets/img/portfolio/p3.jpg)">
+                    <div class="portfolio-content">
+                        <h3>Working in new case</h3>
+                        <p>Excepteur sint occ aecat cupidatat non proident, sunt in culpa qui officia deserunt </p>
+                        <div class="portfolio-cat">
+                            <span>Building</span>
+                        </div>
+                        <a href="single-portfolio.html" class="read-more-port">READ MORE <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div> <!-- /.single-portofolio -->
+                <div class="single-portofolio grid-item finance col-lg-4 col-md-6 bg-cover text-white" style="background-image: url(../static/assets/img/portfolio/p5.jpg)">
+                    <div class="portfolio-content">
+                        <h3>Working in new case</h3>
+                        <p>Excepteur sint occ aecat cupidatat non proident, sunt in culpa qui officia deserunt </p>
+                        <div class="portfolio-cat">
+                            <span>Building</span>
+                        </div>
+                        <a href="single-portfolio.html" class="read-more-port">READ MORE <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div> <!-- /.single-portofolio -->
+                <div class="single-portofolio grid-item building col-lg-4 col-md-6 bg-cover text-white" style="background-image: url(../static/assets/img/portfolio/p2.jpg)">
+                    <div class="portfolio-content">
+                        <h3>Working in new case</h3>
+                        <p>Excepteur sint occ aecat cupidatat non proident, sunt in culpa qui officia deserunt </p>
+                        <div class="portfolio-cat">
+                            <span>Building</span>
+                        </div>
+                        <a href="single-portfolio.html" class="read-more-port">READ MORE <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div> <!-- /.single-portofolio -->
+                <div class="single-portofolio business finance grid-item col-lg-4 col-md-6 bg-cover text-white" style="background-image: url(../static/assets/img/portfolio/p3.jpg)">
+                    <div class="portfolio-content">
+                        <h3>Working in new case</h3>
+                        <p>Excepteur sint occ aecat cupidatat non proident, sunt in culpa qui officia deserunt </p>
+                        <div class="portfolio-cat">
+                            <span>Building</span>
+                        </div>
+                        <a href="single-portfolio.html" class="read-more-port">READ MORE <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div> <!-- /.single-portofolio -->
+            </div> <!-- /.portfolio-list-items -->
+
+            <div class="ajax_load_btn text-center mt-60">
+                <a href="#" class="theme_btn">VIEW MORE</a>
+            </div>
+        </section> <!-- /.our-portfolio portfolio-filter-wrap -->
+
+
+{% endblock %}

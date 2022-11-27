@@ -1,0 +1,220 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+      <!--
+        =============================================
+            Page Banner  Section
+        ==============================================
+        -->
+        <section class="page-banner-wrap bg-contain bg-bottom d-flex align-items-center" style="background-image: url('assets/img/page_banner_bg.png')">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="page-banner">
+                            <span>our blog</span>
+                            <h2>Blog Details</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> <!-- /.page-banner-wrap -->
+
+
+
+        <!-- 
+        =============================================
+            Blog Wrap
+        ============================================== 
+        -->
+        <section class="blog-wrapper section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-sm-12">
+                        <div class="blog-item-full-grid">
+                            <div class="single-blog-item">
+                                <div class="blog-featured-image">
+
+                                    <img src="{{ post1.rasm.url }}" alt="blog">
+                                </div>
+                                <h2><a href="#">{{ post1.sarlovha }}</a></h2>
+                                <div class="post-meta">
+                                    <ul>
+                                        <li><a href="#">{{ post1.joylangan }}</a></li>
+                                        <li><a href="#">{{ post1.xizmat }}</a></li>
+                                        <li><a href="#">3 comments</a></li>
+                                    </ul>
+                                </div>
+                                <p>{{ psot1.matn }}</p>
+                                <blockquote>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                </blockquote>
+                                <h3>Job description in hr</h3>
+                                <p>The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
+                                <div class="row">
+                                    <img src="assets/img/blog/blog-details.jpg" alt="" class="col-md-6">
+                                    <div class="col-md-6">
+                                        <h3>Human Resources</h3>
+                                        <ul>
+                                            <li>Mcillum dolore eu fugiat nulla pariatur.</li>
+                                            <li>Lorem ipsum dolor sit amet,</li>
+                                            <li>Fhender ecminim veni quis nostrud exercita</li>
+                                            <li>Donehenderit in voluptate velit esse</li>
+                                            <li>Mcillum dolore nulla pariatur.</li>
+                                            <li>Lorem ipsum dolor sit amet,</li>
+                                            <li>Ecminim veni quis nostrud exercita</li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div> <!-- /.single-blog-item -->
+                        </div> <!-- /.blog-item-full-grid -->
+
+                        <div class="tags-share-section row">
+                            <div class="tags-list col-md-6 col-sm-12">
+                                <span>TAGS  :</span>
+                                <a href="#">Photography</a>
+                                <a href="#">Content</a>
+                                <a href="#">News</a>
+                            </div>
+                            <div class="share-post  col-md-6 col-sm-12 text-lg-right">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div> <!-- /.tags-share-section -->
+
+                        <div class="comment-template-section">
+                            <h3>Comments</h3>
+                            <div class="comment-list">
+                                <div class="media single-comment">
+                                   <img src="assets/img/blog/comment1.jpg" alt="">
+                                   <div class="media-body">
+                                      <h5>Chris Hemsworth</h5>
+                                      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at.
+                                      <span><a href="#"><i class="fal fa-reply"></i> Reply</a></span>
+                                      <div class="media mt-3 comment-replay">
+                                         <a href="#">
+                                         <img src="assets/img/blog/comment2.jpg" alt="">
+                                         </a>
+                                         <div class="media-body">
+                                            <h5>jasicca ben</h5>
+                                            viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                            <span><a href="#"><i class="fal fa-reply"></i> Reply</a></span>
+                                         </div>
+                                      </div>
+
+                                   </div>
+                                </div> <!-- /.media - single-comment -->
+                                <div class="media single-comment">
+                                   <img src="assets/img/blog/comment3.jpg" alt="">
+                                   <div class="media-body">
+                                      <h5>Chris evans</h5>
+                                      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at.
+                                      <span><a href="#"><i class="fal fa-reply"></i> Reply</a></span>
+                                   </div>
+                                </div> <!-- /.media - single-comment -->
+                            </div>
+                        </div> <!-- /.comment-template-section -->
+
+                        <div class="comment-from-section">
+                            <h3>leave your comments</h3>
+                            <div class="comment-form">
+                                <form action="#" class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" placeholder="Your Name *">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="email" placeholder="Your Email*">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <textarea name="coment" placeholder="Comment"></textarea>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <button>Send message</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div> <!-- /.comment-from-section -->
+                    </div> <!-- /.col-lg-9 col-sm-12 -->
+                    <div class="col-lg-3 col-sm-12">
+                        <div class="blog-sidebar-wrap">
+                            <div class="single-sidebar-widgets">
+                                <h3>Categories</h3>
+                                <div class="categorie">
+                                    <ul>
+                                        <li><a href="#">Branding <span>12</span></a></li>
+                                        <li><a href="#">UI Design  <span>32</span></a></li>
+                                        <li><a href="#">Typography <span>22</span></a></li>
+                                        <li><a href="#">Wordpress <span>15</span></a></li>
+                                        <li><a href="#">Development <span>30</span></a></li>
+                                        <li><a href="#">Photography <span>03</span></a></li>
+                                    </ul>
+                                </div>
+                            </div> <!-- /.single-sidebar-widgets -->
+
+                            <div class="single-sidebar-widgets">
+                                <h3>Trending Post</h3>
+                                <div class="recent-post-widget">
+                                    <div class="single-recent-post d-flex align-items-center">
+                                        <div class="recent-img">
+                                            <img src="assets/img/blog/r1.jpg" alt="blog">
+                                        </div>
+                                        <div class="recent-title">
+                                            <a href="#">Outstanding Blog Post</a>
+                                            <span>December 17, 2019</span>
+                                        </div>
+                                    </div> <!-- /.single-recent-post -->
+                                    <div class="single-recent-post d-flex align-items-center">
+                                        <div class="recent-img">
+                                            <img src="assets/img/blog/r2.jpg" alt="blog">
+                                        </div>
+                                        <div class="recent-title">
+                                            <a href="#">Hook Your Audience</a>
+                                            <span>April 21, 2019</span>
+                                        </div>
+                                    </div> <!-- /.single-recent-post -->
+                                    <div class="single-recent-post d-flex align-items-center">
+                                        <div class="recent-img">
+                                            <img src="assets/img/blog/r3.jpg" alt="blog">
+                                        </div>
+                                        <div class="recent-title">
+                                            <a href="#">Structure Your Post</a>
+                                            <span>December 07, 2019</span>
+                                        </div>
+                                    </div> <!-- /.single-recent-post -->
+                                    <div class="single-recent-post d-flex align-items-center">
+                                        <div class="recent-img">
+                                            <img src="assets/img/blog/r4.jpg" alt="blog">
+                                        </div>
+                                        <div class="recent-title">
+                                            <a href="#">Make Your Content</a>
+                                            <span>December 27, 2019</span>
+                                        </div>
+                                    </div> <!-- /.single-recent-post -->
+                                </div>
+                                </div>
+                            </div> <!-- /.single-sidebar-widgets -->
+
+                            <div class="single-sidebar-widgets">
+                                <h3>Tags</h3>
+                                <div class="tags">
+                                    <ul>
+                                        <li><a href="#">Responsive</a></li>
+                                        <li><a href="#">Development</a></li>
+                                        <li><a href="#">free</a></li>
+                                        <li><a href="#">Branding</a></li>
+                                        <li><a href="#">Awesome</a></li>
+                                        <li><a href="#">Typography</a></li>
+                                        <li><a href="#">Wordpress</a></li>
+                                    </ul>
+                                </div>
+                            </div> <!-- /.single-sidebar-widgets -->
+                        </div> <!-- /.blog-sidebar-wrap -->
+                    </div> <!-- /.col-lg-3 col-sm-12 -->
+                </div>
+            </div>
+        </section>
+
+{% endblock %}

@@ -1,5 +1,5 @@
 from django.contrib import admin
-from news.models import Guruxlash, Post, Portfolio
+from .models import Guruxlash, Post, Portfolio
 # Register your models here.
 
 @admin.register(Guruxlash)

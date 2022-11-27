@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ======== Page title ============ -->
+    <title>FreeBuild - Construction HTML Template</title>
+
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="../static/assets/img/favicon.png">
+
+    <!-- ===========  All Stylesheet ================= -->
+    <!--  fontawesome css plugins -->
+    <link rel="stylesheet" href="../static/assets/css/fontawesome.min.css">
+    <!--  animate css plugins -->
+    <link rel="stylesheet" href="../static/assets/css/animate.css">
+    <!--  magnific-popup css plugins -->
+    <link rel="stylesheet" href="../static/assets/css/magnific-popup.css">
+    <!--  owl carosuel css plugins -->
+    <link rel="stylesheet" href="../static/assets/css/owl.carousel.min.css">
+    <!--  owl theme css plugins -->
+    <link rel="stylesheet" href="../static/assets/css/owl.theme.css">
+    <!--  Bootstrap css plugins -->
+    <link rel="stylesheet" href="../static/assets/css/bootstrap.min.css">
+    <!-- meanmenu css file -->
+    <link rel="stylesheet" href="../static/assets/css/meanmenu.min.css">
+    <!-- template default style css file -->
+    <link rel="stylesheet" href="../static/assets/css/default.css">
+    <!-- template main style css file -->
+    <link rel="stylesheet" href="../static/style.css">
+    <!-- template responsive css stylesheet -->
+    <link rel="stylesheet" href="../static/assets/css/responsive.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <!-- preloader element started -->
+    <div class="pre-loader">
+        <div class="sk-cube-grid">
+          <div class="sk-cube sk-cube1"></div>
+          <div class="sk-cube sk-cube2"></div>
+          <div class="sk-cube sk-cube3"></div>
+          <div class="sk-cube sk-cube4"></div>
+          <div class="sk-cube sk-cube5"></div>
+          <div class="sk-cube sk-cube6"></div>
+          <div class="sk-cube sk-cube7"></div>
+          <div class="sk-cube sk-cube8"></div>
+          <div class="sk-cube sk-cube9"></div>
+        </div>
+    </div>
+    <!-- preloader element end -->
+
+    <div class="main-wrapper">
+
+        <!--
+        =============================================
+            Header Section
+        ==============================================
+        -->
+        <header class="header-three">
+            <div class="top-header">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-lg-8 col-md-9 top-bar-left">
+                            <span><i class="fas fa-phone"></i>+998 (90) 203-07-00</span>
+                            <span><i class="fas fa-phone"></i>zulhimmat@gmailcom</span>
+                            <span><i class="fas fa-clock"></i>Duy-Shan</span>
+                        </div>
+                        <div class="col-lg-4 col-md-3 text-md-right">
+                            <div class="social-profile">
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-two pt-30 default-menu" id="sticky-nav">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-lg-2 d-flex">
+                            <a class="navbar-brand logo" href="index.html">
+                                <img src="../static/assets/img/logo1.png" class="logo-display" alt="shipo">
+                            </a>
+                        </div>
+                        <div class="col-lg-10 col-md-9  d-none d-lg-block text-lg-right">
+                            <nav id="responsive-menu" class="menu-style-two">
+                                <ul class="menu-items">
+                                    <li><a href="{% url 'home' %}">home</a>
+                                        <!-- <ul class="submenu">
+                                            <li><a href="{% url 'home' %}">Home One</a></li>
+                                            <li><a href="{% url 'home' %}">Home Two</a></li>
+                                            <li><a href="{% url 'home' %}">Home Three</a></li>
+                                        </ul> -->
+                                    </li>
+                                    <li><a href="{% url 'about' %}">aboutru</a></li>
+                                    <li><a href="{% url 'service' %}">Servicesru</a></li>
+                                    <li><a href="{% url 'portfolio' %}">All Projectsru</a></li>
+                                    <li><a href="{% url 'blog' %}">News</a></li>
+                                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                                    <li><a href="{% url 'shop' %}">Shop</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-12">
+                            <div class="responsive-menu"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header> <!-- /.header section -->
+
+
+
+        {% block content %} {% endblock %}
+
+
+
+
+        <section class="contact-section text-white">
+            <div class="container contact-info-bg text-white">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4">
+                        <div class="single-contact-info">
+                            <div class="contact-icon">
+                                <img src="../static/assets/img/call.png" alt="freebuild">
+                            </div>
+                            <div class="contact-content">
+                                <h4>Contacts</h4>
+                                <p>Call Us : +123 456 789 <br>Email Us At : hammer@gmailcom</p>
+                            </div>
+                        </div>
+                    </div> <!-- /.col-lg-4 col-md-4 -->
+                    <div class="col-lg-4 col-md-4">
+                        <div class="single-contact-info">
+                            <div class="contact-icon">
+                                <img src="../static/assets/img/home.png" alt="freebuild">
+                            </div>
+                            <div class="contact-content">
+                                <h4>Address</h4>
+                                <p>Hemmer Builder, Downtown, <br>Victoria, Australia</p>
+                            </div>
+                        </div>
+                    </div> <!-- /.col-lg-4 col-md-4 -->
+                    <div class="col-lg-4 col-md-4">
+                        <div class="single-contact-info">
+                            <div class="contact-icon">
+                                <img src="../static/assets/img/like.png" alt="freebuild">
+                            </div>
+                            <div class="contact-content">
+                                <h4>Follow Us</h4>
+                                <div class="follow-icons">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- /.col-lg-4 col-md-4 -->
+                </div>
+            </div>
+        </section> <!-- /.contact section -->
+
+
+        <!--
+        =============================================
+            Footer Section
+        ==============================================
+        -->
+        <footer class="footer-section pt-150 pb-30">
+            <div class="container pb-80">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="single-footer-widget">
+                            <h3>About Us</h3>
+                            <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do Lorem ipsum dolor sit amet, consectetur adipisicing  eiusmod </p>
+                            <div class="subscribe-box">
+                                <form action="#">
+                                    <input type="text" placeholder="Subscribe In Our Newsletter">
+                                    <button type="submit"><i class="fas fa-angle-right"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="single-footer-widget business-hour ">
+                            <h3>Biz haqimizda</h3>
+                            <p>Ish kunlari :</p>
+                            <span>Duyshanba – Shanba : 9:00 dan 20:00 gacha</span>
+                            <p>Dam olish kunlari :</p>
+                            <span>Barcha Yakshanba Kunlari</span> <br>
+                            <span>Barcha Rasmiy Bayramlar</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="single-footer-widget">
+                            <h3>Useful Links</h3>
+                            <ul>
+                                <li><a href="#">All properties</a></li>
+                                <li><a href="#">FAQ’S</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Sign up</a></li>
+                                <li><a href="#">Articles</a></li>
+                                <li><a href="#">Popular tags</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="single-footer-widget">
+                            <h3>Our News</h3>
+                            <div class="recent-news">
+                                <div class="single-recent-news d-flex align-self-center">
+                                    <div class="news-img">
+                                        <img src="../static/assets/img/news1.png" alt="">
+                                    </div>
+                                    <div class="news-title">
+                                        <a href="#">We Build Your Best Home With Our Best </a>
+                                        <span>On : Feb 12, 2015</span>
+                                    </div>
+                                </div><!-- single news end -->
+                                <div class="single-recent-news d-flex align-self-center">
+                                    <div class="news-img">
+                                        <img src="../static/assets/img/news2.png" alt="">
+                                    </div>
+                                    <div class="news-title">
+                                        <a href="#">The Good Plan for Design To Build Your House</a>
+                                        <span>On : Feb 12, 2015</span>
+                                    </div>
+                                </div><!-- single news end -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bootm pt-30">
+                <div class="container">
+                    <div class="row d-flex align-self-center">
+                        <div class="col-lg-6 col-md-6">
+                            <span>Copyright ©2019 Mugli. All Rights Reserved</span>
+                        </div>
+                        <div class="col-lg-6 col-md-6 text-lg-right">
+                            <div class="footer-menu">
+                                <ul>
+                                    <li><a href="#">Disclaimer</a></li>
+                                    <li><a href="#">Privacy</a></li>
+                                    <li><a href="#">Advertisement</a></li>
+                                    <li><a href="{% url 'contact' %}">Contact us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer> <!-- /.footer section -->
+
+
+    </div>
+
+
+    <!--  ALl JS Plugins
+    ====================================== -->
+    <script src="../static/assets/js/jquery-1.12.4.min.js"></script>
+    <script src="../static/assets/js/jquery.easing.1.3.js"></script>
+    <script src="../static/assets/js/popper.min.js"></script>
+    <script src="../static/assets/js/bootstrap.min.js"></script>
+    <script src="../static/assets/js/isotope.pkgd.min.js"></script>
+    <script src="../static/assets/js/imageload.min.js"></script>
+    <script src="../static/assets/js/scrollUp.min.js"></script>
+    <script src="../static/assets/js/owl.carousel.min.js"></script>
+    <script src="../static/assets/js/magnific-popup.min.js"></script>
+    <script src="../static/assets/js/waypoint.js"></script>
+    <script src="../static/assets/js/counterup.min.js"></script>
+    <script src="../static/assets/js/wow.min.js"></script>
+    <script src="../static/assets/js/equalheights.min.js"></script>
+    <script src="../static/assets/js/ajax-mail.js"></script>
+    <script src="../static/assets/js/sticky.js"></script>
+    <script src="../static/assets/js/meanmenu.min.js"></script>
+    <script src="../static/assets/js/active.js"></script>
+</body>
+</html>

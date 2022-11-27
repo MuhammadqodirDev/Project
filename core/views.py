@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from news.models import Guruxlash, Post, Portfolio
+from .models import Guruxlash, Post, Portfolio
 
 # Create your views here.
 
