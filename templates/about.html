@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load i18n %}
 {% block content %}
 {% load static %}
       <!--
@@ -11,8 +12,8 @@
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <div class="page-banner">
-                            <span>Who we are</span>
-                            <h2>About us</h2>
+                            <span>{% trans 'Who we are' %}</span>
+                            <h2>{% trans 'About us' %}</h2>
                         </div>
                     </div>
                 </div>
@@ -29,22 +30,22 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-12">
                         <div class="video-section-content">
-                            <h2>Why Choose Us</h2>
+                            <h2>{% trans 'Why Choose Us' %}</h2>
                             <ul>
                                 <li>
-                                    <h3>Commitment</h3>
+                                    <h3>{% trans 'Commitment' %}</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                 </li>
                                 <li>
-                                    <h3>Dependable and honesty</h3>
+                                    <h3>{% trans 'Dependable and honesty' %}</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                 </li>
                                 <li>
-                                    <h3>Alwasy improving</h3>
+                                    <h3>{% trans 'Alwasy improving' %}</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                 </li>
                             </ul>
-                            <a href="#" class="theme_btn">LEARN MORE</a>
+                            <a href="#" class="theme_btn">{% trans 'LEARN MORE' %}</a>
                         </div>
                     </div>
                     <div class="col-lg-5 offset-lg-1 col-md-12">
@@ -71,8 +72,8 @@
                     </div> <!-- /.col-lg-6 col-sm-12 -->
                     <div class="col-lg-6 col-sm-12">
                         <div class="theme-heading">
-                            <span>Some FAQ’s</span>
-                            <h2>Fequality Ask <br>Question</h2>
+                            <span>{% trans 'Some FAQ’s' %}</span>
+                            <h2>{% trans 'Fequality Ask' %} <br>{% trans 'Questions' %}</h2>
                         </div>
                         <div class="frequent-ask-accrodian">
                            <div id="accordion">
@@ -80,13 +81,13 @@
                                  <div class="card-header" id="headingOne">
                                     <h5 class="mb-0">
                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                       Why We Best?
+                                           {% trans ' Why We Best?' %}
                                        </button>
                                     </h5>
                                  </div>
                                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                                     <div class="card-body">
-                                       There are many variations of passages of available but majority have alteration in some by inject humour or random words. Lorem ipsum dolor sit amet, error insolens reprimique.
+                                      {% trans ' There are many variations of passages of available but majority have alteration in some by inject humour or random words. Lorem ipsum dolor sit amet, error insolens reprimique.' %}
                                     </div>
                                  </div>
                               </div>
@@ -94,7 +95,7 @@
                                  <div class="card-header" id="headingTwo">
                                     <h5 class="mb-0">
                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                       Feature With Great Service
+                                           {% trans ' Feature With Great Service' %}
                                        </button>
                                     </h5>
                                  </div>
@@ -108,7 +109,7 @@
                                  <div class="card-header" id="headingThree">
                                     <h5 class="mb-0">
                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                       Great Qustion for our customer
+                                           {% trans ' Great Qustion for our customer' %}
                                        </button>
                                     </h5>
                                  </div>
@@ -136,8 +137,8 @@
                 <div class="row">
                     <div class="col-lg-10 offset-lg-1 col-12 text-center">
                         <div class="what-we-do-title">
-                            <span>Testimonials</span>
-                            <h2>Our Customers Say</h2>
+                            <span>{% trans 'Testimonials' %}</span>
+                            <h2>{% trans 'Our Customers Say' %}</h2>
                         </div>
                     </div>
                 </div>

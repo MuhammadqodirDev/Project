@@ -1,4 +1,5 @@
 {% extends 'base.html'  %}
+{% load i18n %}
 {%  block content %}
     {% load static %}
         <!-- 
@@ -12,8 +13,8 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-8 col-12 col-lg-6">
-                                <span>WE MAKE</span>
-                                <h1>Dream House</h1>
+                                <span>{% trans 'WE MAKE' %}</span>
+                                <h1>{% trans 'Dream House' %}</h1>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa dicta <br>sapiente, quo in minus nostrum praesentium quidem.</p>
                                 <a href="#" class="theme_btn get_start">Get details</a>
                             </div>
@@ -40,7 +41,7 @@
                             <div class="item-icon">
                                 <img src="../static/assets/img/icons/carry.png" alt="">
                             </div>
-                            <h3>Moslashuvchanlik</h3>
+                            <h3>{% trans 'Flexibility' %}</h3>
                             <p>Lorem ipsum dolor sit amet consectetuLorem ipsum </p>
                         </div> <!-- /.single-feature-box-item -->
                     </div> <!-- /.col-lg-4 col-md-4 col-sm-12 -->
@@ -49,7 +50,7 @@
                             <div class="item-icon">
                                 <img src="../static/assets/img/icons/roller.png" alt="">
                             </div>
-                            <h3>Eng zamonaviy</h3>
+                            <h3>{% trans 'Modern' %}</h3>
                             <p>Lorem ipsum dolor sit amet consectetuLorem ipsum </p>
                         </div> <!-- /.single-feature-box-item -->
                     </div> <!-- /.col-lg-4 col-md-4 col-sm-12 -->
@@ -58,7 +59,7 @@
                             <div class="item-icon">
                                 <img src="../static/assets/img/icons/config.png" alt="">
                             </div>
-                            <h3>Sifatli hizmat</h3>
+                            <h3>{% trans 'Quality service' %}</h3>
                             <p>Lorem ipsum dolor sit amet consectetuLorem ipsum </p>
                         </div> <!-- /.single-feature-box-item -->
                     </div> <!-- /.col-lg-4 col-md-4 col-sm-12 -->
@@ -77,8 +78,8 @@
                 <div class="row">
                     <div class="col-lg-10 offset-lg-1 col-12 text-center">
                         <div class="what-we-do-title">
-                            <span>Bizning hizmatlar</span>
-                            <h2>We build strong brands and grow businesses through branded services, <span>digital storytelling.</span></h2>
+                            <span>{% trans 'Our services' %}</span>
+                            <h2>{% trans 'We build strong brands and grow businesses through branded services,' %}<span>{% trans 'digital storytelling.' %}</span></h2>
                         </div>
                     </div>
                 </div>
@@ -86,36 +87,36 @@
                     <div class="col-lg-3 col-sm-6 text-center">
                         <div class="single-we-do">
                             <img src="../static/assets/img/wedo/w1.png" alt="">
-                            <h3>Residential Design</h3>
+                            <h3>{% trans 'Residential Design' %}</h3>
                             <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incidid</p>
                         </div> <!-- /.single-we-do -->
                     </div> <!-- /.col-lg-3 col-sm-6 -->
                     <div class="col-lg-3 col-sm-6 text-center">
                         <div class="single-we-do">
                             <img src="../static/assets/img/wedo/w2.png" alt="">
-                            <h3>Intorior Design</h3>
+                            <h3>{% trans 'Intorior Design' %}</h3>
                             <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incidid</p>
                         </div> <!-- /.single-we-do -->
                     </div> <!-- /.col-lg-3 col-sm-6 -->
                     <div class="col-lg-3 col-sm-6 text-center">
                         <div class="single-we-do">
                             <img src="../static/assets/img/wedo/w3.png" alt="">
-                            <h3>Halls Design</h3>
+                            <h3>{% trans 'Halls Design' %}</h3>
                             <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incidid</p>
                         </div> <!-- /.single-we-do -->
                     </div> <!-- /.col-lg-3 col-sm-6 -->
                     <div class="col-lg-3 col-sm-6 text-center">
                         <div class="single-we-do">
                             <img src="../static/assets/img/wedo/w4.png" alt="">
-                            <h3>Complex Design</h3>
+                            <h3>{% trans 'Complex Design' %}</h3>
                             <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incidid</p>
                         </div> <!-- /.single-we-do -->
                     </div> <!-- /.col-lg-3 col-sm-6 -->
                 </div>
 
                 <div class="what-we-do-button text-center">
-                    <a href="#" class="theme_btn">Barcha hizmatlar</a>
-                    <a href="#" class="theme_btn btn_tb">Biz bilan aloqa</a>
+                    <a href="#" class="theme_btn">{% trans 'All services' %}</a>
+                    <a href="#" class="theme_btn btn_tb">{% trans 'Contact us' %}</a>
                 </div>
             </div>
         </section> <!-- /.what-we-do -->
@@ -137,7 +138,7 @@
                     <div class="col-lg-6 col-sm-12">
                         <div class="theme-heading">
                             <!-- <span>Ko'p soraladigon savollar</span> -->
-                            <h2>Ko'p So'raladigon <br>Savollar</h2>
+                            <h2>{% trans 'Most Asked ' %}<br>{% trans 'Questions' %}</h2>
                         </div>
                         <div class="frequent-ask-accrodian">
                            <div id="accordion">
@@ -145,13 +146,13 @@
                                  <div class="card-header" id="headingOne">
                                     <h5 class="mb-0">
                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                       Narxi qancha?
+                                       How much does it cost?
                                        </button>
                                     </h5>
                                  </div>
                                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                                     <div class="card-body">
-                                       There are many variations of passages of available but majority have alteration in some by inject humour or random words. Lorem ipsum dolor sit amet, error insolens reprimique.
+                                      {% trans ' There are many variations of passages of available but majority have alteration in some by inject humour or random words. Lorem ipsum dolor sit amet, error insolens reprimique.' %}
                                     </div>
                                  </div>
                               </div>
@@ -159,7 +160,7 @@
                                  <div class="card-header" id="headingTwo">
                                     <h5 class="mb-0">
                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                       Qancha muddatda tayyor boladi?
+                                      {% trans ' How long will it be ready?' %}
                                        </button>
                                     </h5>
                                  </div>
@@ -173,7 +174,7 @@
                                  <div class="card-header" id="headingThree">
                                     <h5 class="mb-0">
                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                       Sifatiga kafolat bormi?
+                                      {% trans ' Is there a quality guarantee? ' %}
                                        </button>
                                     </h5>
                                  </div>
@@ -198,30 +199,30 @@
         -->
         <section class="funfact-countup section-padding">
             <div class="container">
-                <h1>Bizning<br>Muvaffaqiyatlarimiz</h1>
+                <h1>{% trans "Our" %}<br>{% trans 'Succeses' %}</h1>
                 <div class="row">
                     <div class="col-lg-2 col-md-6">
                         <div class="single-countup">
                             <span>12</span>
-                            Yil Tajriba
+                            {% trans 'Years of experiences' %}
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6">
                         <div class="single-countup">
                             <span>890</span>
-                            Hursand Mijozlar
+                            {% trans 'Happy Customers ' %}
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6">
                         <div class="single-countup">
                             <span>40</span>
-                            Sertifikatlar
+                            {% trans 'Certificate ' %}
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6">
                         <div class="single-countup">
                             <span>34</span>
-                            Hodimlar
+                            {% trans 'Employees' %}
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12">
@@ -243,9 +244,9 @@
             <div class="container">
                 <div class="col-md-12 col-lg-8 offset-lg-2 text-center">
                     <div class="call-to-action">
-                        <h2>35 % li chegirmaga ega bo'lmoqchimisiz?</h2>
-                        <p>Hoziroq biz bilan bog'laning, 5-minutda barcha narxlarni qolingizga olishingiz mumkin!</p>
-                         <a href="#" class="theme_btn call-action-btn">Bo'glanish</a>
+                        <h2>{% trans 'Want to get 35% off?' %}</h2>
+                        <p>{% trans 'Contact us now, you can get all the prices in your hand in 5 minutes!' %}</p>
+                         <a href="#" class="theme_btn call-action-btn">{% trans 'Contact' %}</a>
                     </div>
                 </div>
             </div>
@@ -324,7 +325,7 @@
                     <div class="col-sm-12">
                         <div class="theme-heading">
                             <!-- <span>BLOG UPDATES</span> -->
-                            <h2>Yangiliklar</h2>
+                            <h2>News</h2>
                         </div>
                     </div>
                 </div>
@@ -338,11 +339,11 @@
                                     <span>Oct</span>
                                 </div>
                                 <div class="post-cats">
-                                    <span>Staff</span>
-                                    <span>Startup</span>
-                                    <span>Work</span>
+                                    <span>{% trans 'Staff' %}</span>
+                                    <span>{% trans 'Startup' %}</span>
+                                    <span>{% trans 'Work' %}</span>
                                 </div>
-                                <h3><a href="#">Design to next level</a></h3>
+                                <h3><a href="#">{% trans 'Design to next level' %}</a></h3>
                                 <p>veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in </p>
 
                                 <!-- <a href="#" class="read-more"><i class="fas fa-caret-right"></i>read more</a> -->

@@ -21,10 +21,18 @@ class Guruxlash(models.Model):
 class Post(models.Model):
     gurux = models.ForeignKey(Guruxlash, related_name='gurux', on_delete=models.CASCADE)
     sarlovha = models.CharField(max_length=250)
+    sarlovha_ru = models.CharField(max_length=250)
+    sarlovha_en = models.CharField(max_length=250)
     slug = models.SlugField(max_length=255)
     matn = models.TextField(blank=True, null=True)
+    matn_ru = models.TextField(blank=True, null=True)
+    matn_en = models.TextField(blank=True, null=True)
     matn2 = models.TextField(null=True, blank=True)
+    matn2_ru = models.TextField(null=True, blank=True)
+    matn2_en = models.TextField(null=True, blank=True)
     matn3 = models.TextField(null=True, blank=True)
+    matn3_ru = models.TextField(null=True, blank=True)
+    matn3_en = models.TextField(null=True, blank=True)
     joylangan = models.DateTimeField(auto_now_add=True)
     rasm = models.ImageField(upload_to='image/')
 
@@ -41,8 +49,12 @@ class Post(models.Model):
 
 class Portfolio(models.Model):
     sarlovha = models.CharField(max_length=255, blank=True, null=True)
+    sarlovha_ru = models.CharField(max_length=255, blank=True, null=True)
+    sarlovh_en = models.CharField(max_length=255, blank=True, null=True)
     slug = models.SlugField(max_length=255,  blank=True, null=True)
     matn = models.TextField(blank=True, null=True)
+    matn_ru = models.TextField(blank=True, null=True)
+    matn_en = models.TextField(blank=True, null=True)
     rasm = models.ImageField(upload_to='image/', default='')
     client = models.CharField(max_length=255,  blank=True, null=True)
     xizmat = models.CharField(max_length=255,  blank=True, null=True)

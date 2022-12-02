@@ -1,15 +1,32 @@
 from django.shortcuts import render
 from .models import Guruxlash, Post, Portfolio
 
-# Create your views here.
+# from django.http import HttpResponse
+from django.utils.translation import gettext as _
+from django.utils.translation import get_language, activate, gettext
+
+
 
 def HomePage(request):
+    trans = translate(language='ru')
 
-    return render(request, 'index-3.html')
+    return render(request, 'index-3.html', {'trans':trans})
+
+def translate(language):
+    cur_language = get_language()
+    try:
+        activate(language)
+        text = gettext('hello')
+    finally:
+        activate(cur_language)
+
+    return text
 
 
 def AboutView(request):
-    return render(request, 'about.html')
+    trans = translate(language='ru')
+
+    return render(request, 'about.html', {'trans':trans})
 
 def GuruxView(request):
     return {'gurux':Guruxlash.objects.all()}
@@ -17,7 +34,8 @@ def GuruxView(request):
 def BlogView(request):
     post = Post.objects.all()
     context = {
-        'post':post
+        'post':post,
+
     }
     return render(request, 'blog.html', context)
 
